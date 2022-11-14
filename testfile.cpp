@@ -1,0 +1,1 @@
+#include<iostream>using namespace std;char ch = 'Q';char* p = &ch;		int t = 1010;int* q = &t; //with * access the value of the address int main(){cout<<*p<< "\n";ch = 'T';cout<<*p<< "\n";*p = 'R';cout<< ch<< "\n";return 0;}
