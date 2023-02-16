@@ -1,3 +1,1 @@
-This repo contains algorithms and data structures that were created
-during various courses at KTH. The code here demonstrates basic knowledge
-of algorithms and data structures. 
+This Java repo showcases my proficiency in algorithms and data structures gained through various courses at KTH. It includes a collection of programs and algorithms that illustrate my mastery of the fundamentals in this field.
