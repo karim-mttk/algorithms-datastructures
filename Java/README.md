@@ -1,1 +1,1 @@
-This Java repo showcases my proficiency in algorithms and data structures gained through various courses at KTH. It includes a collection of programs and algorithms that illustrate my mastery of the fundamentals in this field.
+This Java folder showcases my proficiency in algorithms and data structures gained through various courses at KTH. It includes a collection of programs and algorithms that illustrate my mastery of the fundamentals in this field.
