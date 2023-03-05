@@ -27,4 +27,5 @@ def locate_card(cards, query):
 cards = [0,1,3,4,6,7,9,10,12,14,16,20]
 query = 9
 
-locate_card(cards, query)			
+locate_card(cards, query)	
+print("this is it")		

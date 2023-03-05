@@ -1,3 +1,5 @@
+#the following code is a recursive function that prints all the permutations of a string
+
 def permute(string, pocket=""):
     if len(string) == 0:
         print(pocket)
