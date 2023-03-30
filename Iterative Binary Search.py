@@ -15,3 +15,4 @@ arr =[2, 3, 4, 10, 40]
 target = 10
 
 print(binary_itr(arr, 0, len(arr) - 1, target))
+
