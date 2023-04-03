@@ -13,7 +13,9 @@ the last node in the list.
 #         self.val = x
 #         self.next = None
 
-#v1. delete the node and change the pointers
+# v1. delete the node and change the pointers
+
+
 class Solution:
     def deleteNode(self, node):
         """
@@ -26,12 +28,13 @@ class Solution:
         node.next = nextNode.next
 
         nextNode.next = None
-        del(nextNode)
+        del (nextNode)
 
-#v2. Less code
+# v2. Less code
+
+
 class Solution:
     def deleteNode(self, node):
-    
-        node.val = node.next.val 
-        node.next = node.next.next 
 
+        node.val = node.next.val
+        node.next = node.next.next
