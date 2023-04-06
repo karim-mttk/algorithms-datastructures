@@ -1,0 +1,29 @@
+# v1: using recursion with an extra function
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+
+        def rec(head):
+            if not head:
+                return None
+            head.next = rec(head.next)
+            if head.next and head.val < head.next.val:
+                return head.next
+            return head
+
+        return rec(head)
+
+# v2. using recursion without an extra function
+
+
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+
+        def traversal(head):
+            if not head:
+                return None
+            head.next = traversal(head.next)
+            if head.next and head.val < head.next.val:
+                return head.next
+            return head
+
+        return traversal(head)
