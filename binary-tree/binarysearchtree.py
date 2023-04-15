@@ -33,6 +33,20 @@ class BinarySearchTreeNode:
 
         return arr
 
+    def search(self, val):
+        if self.data == val:
+            return True
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+        if val > self.data:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False
+
 
 def buildTree(arr):
     root = BinarySearchTreeNode(arr[0])
@@ -46,4 +60,7 @@ def buildTree(arr):
 if __name__ == '__main__':
     nums = [17, 4, 1, 20, 9, 23, 18, 34]
     tree = buildTree(nums)
-    print(tree.inOrderTraversal())
+    # print(tree.inOrderTraversal())
+
+    # time complexity of search is O(log n)
+    print(tree.search(200))
