@@ -57,6 +57,12 @@ def buildTree(arr):
     return root
 
 
+def find_min(self):
+    if self.left is None:
+        return self.data
+    return self.left.find_min()
+
+
 if __name__ == '__main__':
     nums = [17, 4, 1, 20, 9, 23, 18, 34]
     tree = buildTree(nums)
