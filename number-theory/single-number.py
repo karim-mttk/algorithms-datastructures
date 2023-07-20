@@ -1,3 +1,4 @@
+#solution 1:
 def singleNumber(self, nums: List[int]) -> int:
     counts = {}
     for num in nums:
@@ -9,3 +10,10 @@ def singleNumber(self, nums: List[int]) -> int:
     for num, c in counts.items():
         if c == 1:
             return num
+
+#solution 2:
+def singleNumber(self, nums: List[int]) -> int:
+    res = 0
+    for i in nums:
+        res = i ^ res
+    return res
